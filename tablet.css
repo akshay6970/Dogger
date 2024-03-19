@@ -1,0 +1,11 @@
+@media screen and (min-width:767px) and (max-width:1025px) {
+    h1{
+        font-size: 2rem;
+
+    }
+    .right-banner img{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
