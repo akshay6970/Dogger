@@ -29,13 +29,92 @@
     <!-- mobile css -->
     <link rel="stylesheet" href="mobile.css">
 
+    <!-- JS file -->
+    <script src="script.js"></script>
+
 
 </head>
 
 <body>
     <!-- navbar section -->
-    <div class="navBar">
+    <div class="navBar-section">
+        <div class="navbar-container">
+            <div class="logo">
+                <div>
+                    <a href="#">
+                        <p> Dogger <span>.</span> </p>
+                    </a>
+                </div>
+            </div>
+            <button class="navbar-togler" onclick="openSidebar()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <div class="overlay"></div>
+                <div class="close-btn">
+                    <button class="btn" onclick="closeSidebar()"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div>
+                    <a class="nav-link active" href="#">Home</a>
+                </div>
+                <div class="dropdown">
 
+                    <a class="nav-link" href="#">About
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <div> <a class="drop-link" href="">
+                                <p> Trainers </p>
+                            </a> </div>
+                        <div> <a class="drop-link" href="">
+                                <p> Pricing </p>
+                            </a> </div>
+                        <div> <a class="drop-link" href="">
+                                <p>FAQ </p>
+                            </a> </div>
+                        <div> <a class="drop-link" href="">
+                                <p>Testimonials </p>
+                            </a> </div>
+                        <div> <a class="drop-link" href="">
+                                <p>FAQ </p>
+                            </a> </div>
+                        <div> <a class="drop-link" href="">
+                                <p>Gallery </p>
+                            </a> </div>
+                        <div> <a class="drop-link" href="">
+                                <p>Blog </p>
+                            </a> </div>
+                        <div class="next-dropdown sub-dropdown">
+                            <a class="drop-link" href="">More Links
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                            <div class="sub-dropdown-content">
+                                <div> <a class="drop-link" href="">
+                                        <p>Menu One </p>
+                                    </a> </div>
+                                <div> <a class="drop-link" href="">
+                                        <p>Menu Two </p>
+                                    </a> </div>
+                                <div> <a class="drop-link" href="">
+                                        <p>Menu Three </p>
+                                    </a> </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <a class="nav-link" href="#">Trainers</a>
+                </div>
+                <div>
+                    <a class="nav-link" href="#">services</a>
+                </div>
+                <div>
+                    <a class="nav-link" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--banner section  -->
@@ -72,28 +151,78 @@
             </div>
 
             <div class="welcome-cards">
-                <a class="hover-card">
-                    <div class="welcome-card">
-                        <div class="welcome-text">
-                            <p class="text-title">Love & Care</p>
-                            <p class="card-subtitle">Far far away, behind the word mountains, Separated they live in
-                                Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                            <p>
-                                <a href="#" class="welcome-btn"> Read More </a>
-                            </p>
-                        </div>
-                        <div class="welcome-image">
-                            <div class="welcm-image">
-                                <img src="https://preview.colorlib.com/theme/dogger/images/dogger_img_sm_3.jpg.webp"
+                <div class="welcome-card common-card">
+                    <div class="welcome-text">
+                        <p class="text-title">Love & Care</p>
+                        <p class="card-subtitle">Far far away, behind the word mountains, Separated they live in
+                            Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p>
+                            <a href="#" class="welcome-btn"> Read More </a>
+                        </p>
+                    </div>
+                    <div class="welcome-image">
+                        <div class="welcm-image">
+                            <img src="https://preview.colorlib.com/theme/dogger/images/dogger_img_sm_3.jpg.webp"
                                 class="image" alt="">
-                                <div class="welcome-overlay"></div>
-                            </div>
+                            <div class="welcome-overlay"></div>
                         </div>
                     </div>
-                </a>
+                </div>
+                <div class="welcome-card ">
+                    <div class="welcome-image">
+                        <div class="welcm-image">
+                            <img src="https://preview.colorlib.com/theme/dogger/images/dogger_img_sm_1.jpg.webp"
+                                class="image" alt="">
+                            <div class="welcome-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="welcome-text">
+                        <p class="text-title">Love & Care</p>
+                        <p class="card-subtitle">Far far away, behind the word mountains, Separated they live in
+                            Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p>
+                            <a href="#" class="welcome-btn"> Read More </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="welcome-card common-card">
+                    <div class="welcome-text">
+                        <p class="text-title">Love & Care</p>
+                        <p class="card-subtitle">Far far away, behind the word mountains, Separated they live in
+                            Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p>
+                            <a href="#" class="welcome-btn"> Read More </a>
+                        </p>
+                    </div>
+                    <div class="welcome-image">
+                        <div class="welcm-image">
+                            <img src="https://preview.colorlib.com/theme/dogger/images/dogger_img_sm_2.jpg.webp"
+                                class="image" alt="">
+                            <div class="welcome-overlay"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.querySelector(".navBar-section");
+        var navbarCotainer = document.querySelector(".navbar-container");
+
+        function myFunction() {
+            if (window.pageYOffset >= 10) {
+                navbar.classList.add("bg-color")
+                navbarCotainer.classList.add("sticky")
+            } else {
+                navbar.classList.remove("bg-color");
+                navbarCotainer.classList.remove("sticky");
+            }
+        }
+    </script>
+
 </body>
 
 </html>
