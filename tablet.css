@@ -10,15 +10,15 @@
     }
 
     /*  */
-    /* .overlay{
+    .overlay{
         position: absolute;
-        width: 100%;
+        /* width: 100%; */
         height: 100%;
         background-color: #000;
         opacity: 0.3;
         top: 0;
         left: 0;
-    } */
+    }
     .nav-links  {
         display: flex;
         flex-direction: column;
@@ -44,7 +44,7 @@
         width: 300px;
         opacity: 1;
         transition: .3s easy;
-        overflow: scroll;
+        overflow-x: hidden;
     }
     .close-btn{
         display: flex;
@@ -73,14 +73,46 @@
         flex-direction: column;
         row-gap: 20px;
         margin: 20px 0px;
+        align-items: center;
+    }
+    .welcome-image {
+        max-width: 720px;
+    }
+    .welcome-text {
+        max-width: 720px;
     }
     .common-card{
         flex-direction: column-reverse;
     }
     .welcome-text {
         text-align: start;
-        margin-left: 7.5px;
-        margin-right: 7.5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .welcome-image {
+        padding: 0px;
+    }
+    .welcm-description {
+        width: auto;
     }
 
+    /* about section */
+    
+
+    /*  */
+    .trainer-description {
+        width: auto;
+    }
+    .trainer-cards {
+        width: auto;
+    }
+
+    /* pricing section */
+    .pricing-card {
+        padding: 1.37rem;
+    }
+    .pricing-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

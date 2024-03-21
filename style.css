@@ -154,6 +154,9 @@ h1{
 /* banner section */
 .banner-section{
     background-color: #f8f9fa ;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 .banner-container{
     max-width: 1140px;
@@ -199,7 +202,7 @@ h1{
     align-items: center;
     width: 50%;
     margin-bottom: 3rem ;
-
+    text-align: center;
 }
 .welcm-description p{
     color: #999999;
@@ -236,28 +239,32 @@ h1{
 }
 .welcome-cards {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .welcome-card {
     display: flex;
     /* justify-content: space-between; */
 }
 .welcome-image{
-    padding-left: 7.5px;
-    padding-right: 7.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 540px;
+    box-sizing: unset;
 }
 .welcm-image{
     position: relative;
-    transition: .3s all ease-in-out;
+    display: flex;
 }
-.welcm-image:hover .welcome-overlay{
-   height: 100%;
-   top: 5px;
+.welcome-card:hover .welcome-overlay{
+   top: 10px;
    left: 10px;
    transition: .3s all ease-in-out;
 }
 .welcome-overlay{
     width: 100%;
-    height: 0%;
+    height: 100%;
     background-color: #a2c0be;
     position: absolute;
     z-index: -1;
@@ -277,9 +284,17 @@ h1{
 }
 .welcome-text{
     margin-left: 15px;
-    margin-right: 15px;
+    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+    text-align: end;
+    max-width: 445px;
+}
+.text-start{
+    text-align: start;
+    text-align: start;
+    margin-left: auto;
+    margin-right: 0;
 }
 .welcome-btn {
     font-size: 16px;
@@ -294,4 +309,364 @@ h1{
     display: inline-flex;
     /* align-items: center; */
     justify-content: end;
+}
+
+/* about-section */
+.about-section{
+    display: flex;
+    justify-content: center;
+}
+
+/* trainer section */
+.trainer-section{
+    background-color: #a2c0be !important;
+    padding: 5em 0;
+}
+.container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.trainer-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.trainer-icon{
+    color: #fff;
+}
+.trainer-detail{
+    color: #567876 !important;
+    line-height: 27px;
+}
+.trainer-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 3rem ;
+    text-align: center;
+}
+    
+.trainer-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #405a58;
+}
+.trainer-image{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    margin-bottom: 50px;
+}
+.trainer-image img{
+    position: relative;
+    z-index: 2;
+    display: flex;
+}
+.trainer-card:hover .trainer-overlay{
+    top: 10px;
+    left: 10px;
+}
+.trainer-overlay{
+    position: absolute;
+    background: #405a58;
+    transition: .3s all ease-in-out;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.trainer-text{
+    padding: 0 1rem;
+}
+.trainer-text .title{
+    font-size: 1.3rem;
+    color: #405a58;
+    margin-bottom: 1.3rem;
+}
+.trainer-desc{
+    color: #567876;
+    margin-bottom: 1rem;
+}
+.trainer-icons{
+    display: flex;
+    gap: 8px;
+}
+.trainer-icn{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.trainer-icn i{
+    color: #000;
+    font-size: 12px;
+}
+
+.trainer-icon:hover {
+    position: relative;
+    top: -7px;
+    transition: .3s ease-in-out;
+}
+.trainer-card{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.trainer-cards{
+    display: flex;
+    width: 1140px;
+}
+
+/* pricing section */
+.pricing-section{
+    padding: 5em 0;
+    display: flex;
+    justify-content: center;
+}
+.pricing-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.pricing-cards{
+    display: flex;
+}
+.pricing-card{
+    padding: 3rem;
+    background-color: #a2c0be;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.detail .title{
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+}
+.price-desc{
+    margin-bottom: 3rem !important;
+}
+.price{
+    font-size: 3rem;
+    margin-bottom: 1.5rem ;
+    line-height: 1.7;
+}
+.text-center{
+    text-align: center;
+}
+.price-detail{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.price-button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.price-btn{
+    display: block;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.common-card{
+    background-color: #343a40 ;
+}
+.common-btn{
+    background-color: #567876;
+}
+del{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* customer section */
+.customer-section{
+    padding: 5em 0;
+    background-color: #f8f9fa ;
+}
+.customer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.title-section .title{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #000 ;
+    margin-bottom: 0.5rem ;
+    font-size: 2rem;
+}
+
+.customer-cards{
+    display: flex;
+}
+.customer-card{
+    padding: 20px;
+}
+.customer-text {
+    background: #a2c0be;
+    padding: 30px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 7px;
+    color: #000;
+    font-family: "Vollkorn", serif;
+    box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.5rem ;
+    text-align: center;
+}
+.cust-detail{
+    margin-bottom: 1rem;
+}
+.customer-profile{
+    padding-top: 20px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.profile-image{
+    padding-top: 20px;
+    margin-bottom: 1em;
+
+}
+.profile-image img{
+    border-radius: 50%;
+    max-width: 100px;
+    border: 10px solid #a2c0be;
+}
+.customer-name{
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.customer-navigation{
+    display: flex;
+}
+.customer-navigation i{
+    font-size: 30px;
+}
+.left-arrow , .right-arrow{
+    padding: 20px;
+}
+
+/* gallery section */
+.gallery-section{
+    padding: 5em 0;
+}
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.image-cards{
+    display: flex;
+}
+.image-card{
+    position: relative;
+    display: flex;
+}
+.image-card:hover img{
+    transform: scale(1.2);
+    z-index: 1;
+    transition: .3s ease-in-out;
+}
+.image-card img{
+    transition: .3s ease-in-out;
+}
+
+/* dogger-section */
+.dogger-section{
+    padding: 5em 0;
+}
+.dogger-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dogger-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 570px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.dogger-desc{
+    color: gray;
+    line-height: 1.7;
+}
+.dogger-cards{
+    width: 1140px !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dogger-card{
+    max-width: 570px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    margin-bottom: 1.5rem ;
+}
+.dogger-image{
+    margin-right: 1.5rem ;
+}
+.dogger-image img{
+    width: 190px;
+}
+.dogger-text .title{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.dogger-text .date{
+    color: #b3b3b3;
+    margin-bottom: 1rem !important;
+    line-height: 1.7;
+}
+.dogger-btn{
+    display: block;
+    color: #a2c0be;
+    line-height: 1.7;
 }
