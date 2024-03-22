@@ -71,12 +71,10 @@ h1{
     line-height: 87px;
     position: relative;
 }
-.nav-link:hover {
-    color: #000 !important;
+.nav-link:hover, .nav-links .active {
+    color: #000;
 }
-.nav-links .active {
-    color: #000 !important;
-}
+
 .fa-angle-down{
     position: absolute;
     top: 37px;
@@ -197,9 +195,6 @@ h1{
     justify-content: center;
 }
 .welcm-description{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 50%;
     margin-bottom: 3rem ;
     text-align: center;
@@ -220,7 +215,11 @@ h1{
 }
 .paw-icons{
     display: flex;
+    justify-content: center;
     margin-bottom: 20px;
+}
+.card-left .paw-icons{
+    justify-content: flex-start;
 }
 .right-paw{
     transform: rotate(45deg);
@@ -233,6 +232,7 @@ h1{
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 8px;
+    color: #000;
 }
 .mb-2{
     margin-bottom: 1rem;
@@ -279,19 +279,17 @@ h1{
     line-height: 1.2;
 }
 .card-subtitle{
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem ;
     color: #999999;
 }
 .welcome-text{
-    margin-left: 15px;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto auto auto 15px;
     text-align: end;
     max-width: 445px;
+    line-height: 1.7;
+
 }
 .text-start{
-    text-align: start;
     text-align: start;
     margin-left: auto;
     margin-right: 0;
@@ -315,11 +313,86 @@ h1{
 .about-section{
     display: flex;
     justify-content: center;
+    padding: 5em 0;
 }
+.about-cards{
+    display: flex;
+}
+.about-container{
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.about-title{
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 1rem ;
+    font-size: 2rem;
+    line-height: 1.2;
+
+}
+.about-desc{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+
+}
+.about-para{
+    color: #6c757d ;
+    margin-bottom: 1.5rem ;
+    line-height: 1.7;
+}
+.about-icon{
+    display: flex;
+    color: #a2c0be;
+    margin-bottom: 15px;
+}
+.about-icon i{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.card-left{
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 475px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.card-right{
+    max-width: 570px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 3rem ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.abour-right{
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-btn {
+    position: absolute;
+    top: 47%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* trainer section */
 .trainer-section{
-    background-color: #a2c0be !important;
+    background-color: #a2c0be ;
     padding: 5em 0;
 }
 .container{
@@ -339,16 +412,15 @@ h1{
     color: #fff;
 }
 .trainer-detail{
-    color: #567876 !important;
+    color: #567876 ;
     line-height: 27px;
 }
 .trainer-description{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
+    max-width: 570px;
     margin-bottom: 3rem ;
     text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
 }
     
 .trainer-title {
@@ -423,9 +495,68 @@ h1{
     padding-left: 15px;
     padding-right: 15px;
 }
-.trainer-cards{
+.common-cards{
     display: flex;
     width: 1140px;
+}
+
+
+/* question section */
+
+.question-section{
+    padding: 5em 0;
+    display: flex;
+    justify-content: center;
+}
+.question-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question-description{
+    max-width: 570px;
+    margin-bottom: 3rem ;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.gray{
+    color: gray;
+}
+.question-cards{
+    display: flex;
+    gap: 20px;
+}
+.quest-detail .title{
+    font-size: 19px;
+    font-weight: 400;
+    padding: 10px 0;
+    line-height: 1.2;
+}
+.quest-icon i{
+    background: #a2c0be;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+.block{
+    display: block;
+}
+.style {
+    line-height: 1.7;
+    color: gray;
+    margin-bottom: 1rem;
+    padding: 5px 0;
+}
+.question-container .common-cards .left {
+    margin: 0px;
+    margin-right: auto;
 }
 
 /* pricing section */
@@ -437,7 +568,6 @@ h1{
 .pricing-container{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 }
 .pricing-cards{
@@ -460,7 +590,7 @@ h1{
     text-align: center;
 }
 .price-desc{
-    margin-bottom: 3rem !important;
+    margin-bottom: 3rem ;
 }
 .price{
     font-size: 3rem;
@@ -593,17 +723,17 @@ del{
     align-items: center;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
     width: 100%;
     overflow: hidden;
 }
 .image-cards{
     display: flex;
+    flex-wrap: wrap;
 }
 .image-card{
     position: relative;
     display: flex;
+    width: 25%;
 }
 .image-card:hover img{
     transform: scale(1.2);
@@ -615,19 +745,16 @@ del{
 }
 
 /* dogger-section */
+
 .dogger-section{
     padding: 5em 0;
 }
 .dogger-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .dogger-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 570px;
     padding-left: 15px;
     padding-right: 15px;
@@ -662,11 +789,136 @@ del{
 }
 .dogger-text .date{
     color: #b3b3b3;
-    margin-bottom: 1rem !important;
+    margin-bottom: 1rem ;
     line-height: 1.7;
 }
 .dogger-btn{
     display: block;
     color: #a2c0be;
+    line-height: 1.7;
+}
+
+/* service-section */
+.service-section{
+    padding: 5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-cards{
+    display:flex;
+    max-width: 1140px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.service-card{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 33.33%;
+    margin-bottom: 24px;
+}
+.service-card img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+
+}
+.service-title{
+    margin-bottom: 16px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.service-desc{
+    margin-bottom: 16px;
+    color: gray;
+    line-height: 1.7;
+}
+
+/* contact-form section */
+.contact-form{
+    width: 50%;
+    padding: 48px;
+    background-color: #a2c0be;
+}
+.form-title{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 48px;
+    color: #405a58;
+}
+.input{
+    display: flex;
+}
+.form-input{
+    padding-right: 15px;
+    /* padding-left: 15px; */
+    width: 50%;
+}
+.form-input .label{
+    line-height: 1.7;
+    color: #567876;
+    margin-bottom: 8px;
+}
+.form-input input, .form-input textarea {
+    height: 43px;
+    border-radius: 5px;
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #495057;
+    
+}
+.form-input textarea {
+    height: auto;
+}
+.form-input .btn {
+    width: auto;
+    border-radius: 30px;
+    padding: 10px 30px;
+    height: auto;
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.last-input{
+    padding-left: 15px; 
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.common-input{
+    width: 100%;
+
+}
+.contact-information {
+    width: 50%;
+    background-color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-container{
+    display: flex;
+    /* flex-direction: column; */
+}
+.information-card{
+    display: flex;
+    flex-direction: column;
+}
+.info-title{
+    color: #fff;
+}
+.address-heading{
+    color: #fff;
+    line-height: 1.7;
+}
+.add-detail{
+    color: #a8b1b8;
+    margin-bottom: 16px;
     line-height: 1.7;
 }

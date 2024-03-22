@@ -111,7 +111,7 @@
     /* about section */
 
     /* trainer section */
-    .trainer-cards{
+    .common-cards{
         width: auto;
         flex-wrap: wrap;
         gap: 20px;
@@ -130,4 +130,18 @@
     .customer-cards {
         flex-direction: column;
     }
+    .about-cards {
+        flex-wrap: wrap;
+    }
+
+    /* image section */
+    .image-card{
+        width: 50%;
+    }
+
+    /* dogger section */
+    .dogger-cards {
+        width: auto !important;
+    }
+
 }
