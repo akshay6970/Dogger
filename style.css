@@ -141,11 +141,16 @@ h1{
     width: 100%;
     background-color: #fff;
     z-index: 111;
-    transition: .3s easy;
+    transition: 0.3s easy;
 }
 .bg-color{
     background-color: #fff;
+    position: fixed;
+    z-index: 110; 
+    width: 100%;
+    /* color: #000; */
 }
+
 
 
 
@@ -867,8 +872,7 @@ del{
     outline: none;
     width: 100%;
     font-size: 16px;
-    color: #495057;
-    
+    color: #495057; 
 }
 .form-input textarea {
     height: auto;
@@ -922,3 +926,92 @@ del{
     margin-bottom: 16px;
     line-height: 1.7;
 }
+
+/* footer section */
+.footer-section{
+    padding: 128px 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #333333;
+    color: #fff;
+}
+.footer-container{
+    max-width: 1140px;
+
+}
+.footer-heading{
+    margin-bottom: 24px;
+
+}
+.footer-cards{
+    display: flex;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+}
+.footer-card{
+    /* display: flex; */
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 25%;
+}
+.footer-link{
+    text-decoration: none;
+    color: gray;
+    line-height: 1.7;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.footer-link:hover{
+    color: #fff;
+}
+.footer-icons{
+    display: flex;
+    gap: 32px;
+}
+.footer-icon{
+    text-decoration: none;
+    color: gray;
+    line-height: 1.7;
+}
+.email{
+    background-color: transparent ;
+    border-color: #6c757d !important;
+    color: gray;
+}
+.form-input input, .form-input .email {
+    border-radius: 5px 0px 0px 5px;
+}
+.form-input input, .form-input .submit {
+    border-radius: 0px 5px 5px 0px;
+}
+.subscribe-form{
+    display: flex;
+    width: 100%;
+
+}
+.footer-bottom{
+    margin-top: 48px;
+    padding-top: 48px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) ;
+    text-align: center;
+    color: #737373;
+    font-size: 13px;
+}
+.fa-heart{
+    color: #dc3545 ;
+
+}
+.bottom-text a{
+    text-decoration: none;
+    color: #999999;
+}
+.bottom-text a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+

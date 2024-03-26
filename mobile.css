@@ -143,5 +143,48 @@
     .dogger-cards {
         width: auto !important;
     }
+    .dogger-card {
+        flex-direction: column;
+    }
+    .dogger-image img {
+        /* width: auto; */
+    }
+
+    /* contact section */
+    .contact-container {
+        flex-wrap: wrap;
+    }
+    .contact-form, .contact-information {
+        width: 100%;
+    }
+    .information-card {
+        padding: 48px 0px;
+    }
+    .input{
+        flex-direction: column;
+    }
+    .form-input {
+        width: 100%;
+    }
+    .form-input input {
+        border-radius: 5px;
+    }
+    .form-input {
+        padding: 0px;
+    }
+
+
+    /* service section */
+    .service-card {
+        width: auto;
+    }
+
+    /* footer section */
+    .footer-cards {
+        flex-direction: column;
+    }
+    .footer-card {
+        width: 100%;
+    }
 
 }
